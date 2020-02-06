@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta author="Dorian Holmes" />
+        <meta date="2/4/20"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link href="home.css" rel="stylesheet">
+        
+    </head>
+    <title>Dorian Holmes</title>
+    <header>
+    </header>
+    <body>
+        <section id="home" class="text-class">
+        <form action="">
+            <div class="text-center">
+                <label><input type="checkbox" name="bike" value="30">Bike</label>
+
+                <label><input type="checkbox" name="mercedes" value="20000"> Mercedes </label>
+
+                <label>
+                <input type="checkbox" name="lambo truck" value="20001"> Lambo Truck
+                </label>
+
+                <label>
+                <input type="checkbox" name="audi" value="75000"> Audi
+                </label>
+
+                <label>
+                <input type="checkbox" name="tesla" value="19900"> Tesla Truck
+                </label>
+            </div>
+            <div class="grid-container text-center">
+                <label><h2>Fast-Shipping (2-Days)</h2><input type="radio" checked="checked" name="radio">
+                </label>
+                <label><h3>Fedex Shipping (4-Days)</h3><input type="radio" checked="checked" name="radio">
+                </label>
+                <label><h2>UPS-Shipping (2-Days)</h2><input type="radio" checked="checked" name="radio">
+                </label>
+                <div>
+                    <h3>Payment Method</h3>
+                    <select>
+                        <option value="Mastercard">Mastercard</option>
+                        
+                        <option value="PayPal">PayPal</option>
+                        
+                       <option value="Credit Card">Credit Card</option>
+                    </select>
+                        
+                </div>
+                        <div class="input-group date" data-provide="datepicker">
+                        </div>
+            </div>
+            <div class="text-center">
+                <h3>Billing Date</h3>
+                <input type="date">
+            </div>
+            
+            <div>
+                <table>
+                    <tr>
+                   <th>First Name</th>
+                        <td><input type="text" placeholder="First Name"></td>
+                    <th>Last Name</th>
+                        <td><input type="text" placeholder="Last Name"></td>
+                    </tr>
+                    <tr><th>Address</th>
+                        <td colspan="3"><input type="text" placeholder="Address" width="100%"></td></tr>
+                </table>
+            </div>
+<!--
+            Payment with a combo box.
+            Store location with list box.
+            Billing date with date picker.
+            Must use a table and Fieldset.
+            Capture Customer mailing information
+            I should get to your page by myserver.ncat.edu/order
+-->
+            <input type="submit">
+        </form>
+        </section>
+    </body>
+</html>
