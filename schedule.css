@@ -1,0 +1,49 @@
+#comp322{
+    background-color: coral;
+}
+
+#comp320{
+    background-color: aquamarine;
+}
+
+#math351{
+     background-color: beige;
+}
+
+#comp365{
+     background-color: brown;
+}
+
+#comp350{
+     background-color: forestgreen;
+}
+
+#comp300{
+     background-color: chocolate;
+}
+
+#extracurricular{
+    background-color: blueviolet;
+}
+
+#selfcare{
+    background-color: deepskyblue;
+}
+
+#study{
+    background-color: chartreuse;
+}
+
+#dinner{
+    background-color: cadetblue
+}
+
+th{
+   border: tan;
+    border: inset;
+}
+
+td{
+   border: black;
+    border: solid;
+}
