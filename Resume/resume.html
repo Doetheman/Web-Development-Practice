@@ -1,0 +1,103 @@
+
+<!--
+
+create a page on your server comp322-XX.ncat.edu/resume
+
+use a flex box layout to create your page. there should be 5 sections.
+
+Header that displays your major in a shadowbox
+
+Footer that displays your honors, honor societies or Greek organizations you belong  to.
+
+Three sections between the header and footer that displays a head shot, education , work history
+
+There should be a link/button that will navigate to a resume page that shows your full resume.
+
+your page must grow and shrink at the same rate
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Dorian Holmes Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="d-flex-inline flex-row shadow-lg p-3 mb-5 bg-white">
+    <h1>Computer Science</h1>
+    </header>
+    
+    <div class="d-flex bd-dark">
+        <section class="p-2 flex-fill bd-highlight">
+            <img src="me.png">
+        </section>
+        <section class="p-2 flex-fill bd-highlight">
+            <h1>Education North Carolina A&amp;T State University B.S Computer Science</h1> <br>
+            <h2>Graduation:</h2><p>May 2021</p><br>
+            <h2>Courses:</h2><br>
+            <ul>
+                <li><p>Intro into Computer Programming</p></li>
+                <li><p>Calculus Computer Program Design</p></li>
+                <li><p>Discrete Data Structures</p></li>
+                <li><p>Computer Architecture</p></li>
+                <li><p>Network Security</p></li>
+                <li><p>Programming languages</p></li>
+            </ul>
+        </section>
+        <section class="p-2 flex-fill bd-highlight">
+            <h1>Work History</h1>
+            <h4>Microsoft | CloudTest Explorer Intern May 2019 – August 2019</h4><br>
+            <ul>
+                <li><p>Interviewed 10+ customers regarding a CloudTest product to develop a technical revamp plan</p></li>
+                <li><p>Designed the product’s new user interfaceto meet all of customers needs</p></li>
+                <li><p>Programmed REST APIs in C# to send data from servers to the CloudTest product</p></li>
+                <li><p>Implemented a filter bar to allow users to organize data creating a user-friendly experience</p></li>
+            </ul> 
+            <h4>HBCUvc| Class 2 Fellow August 2018 – Present</h4> 
+            <ul>
+                <li><p>Two year Venture Capitaldevelopment program focusing on entrepreneurship</p></li>
+                <li><p>Participated in monthly Venture Capital investing and community developmenttraining sessions Facebook</p></li>
+                <li><p>Assisted in supporting the development of a diverse startup ecosystem</p></li>
+            </ul>
+            <h4>FBU Software Engineer Intern June 2018 – August 2018</h4>
+            <ul>
+                <li><p>Completed 3 weeks of CodePaththen worked with a team of 3 to create an emergency contact app</p></li>
+                <li><p>Developed several mobile iOS applications for IOS using Objective C and X-Code</p></li>
+                <li><p>Collaborated with 30+ professionals at Facebook and other interns to develop apps efficiently </p></li>
+                <li><p>Designed an iOS application using Firebase, Cocoa Pods, and location manager</p></li>
+            </ul> 
+        </section>
+    </div>
+    
+    <div class="container" style="text-align: center">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#resume">See Resume</button>
+        <!-- Resume Modal -->
+        <div class="modal fade" id="resume" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" style="height:-webkit-fill-available">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                <div class="modal-body">Resume
+                    <embed src="doeresume.pdf" type="application/pdf" width="100%" height="300px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-alert" data-dismiss="modal">Close
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="d-flex">
+    <h1>History</h1><br>
+    <p>Alpha Lambda Delta Honor Society | Association of Computational Machinery | Fall 2017 Semester Dean’s List Fall 2017 AT&amp;T Trip to Headquarters | Spring 2018 Semester TMCF Walmart Foundation Scholarship Spring 2018 The Tom Joyner Foundation Scholarship | Spring 2018 OFC I&amp;E Program | Fall 2018 Head of Cyber Club May 2016 Employee of the Month for Excellence | Winter 2018 UPE Hackathon | Fall 2017 Worldwide Technology Hackathon</p>
+    </footer>
+</body>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
